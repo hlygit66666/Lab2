@@ -8,6 +8,6 @@
 <title>插入成功</title>
 </head>
 <body>
-插入成功！
+插入成功(微笑)！
 </body>
 </html>

@@ -9,7 +9,7 @@
 </head>
 <body>
 <br/>
-<label>欢迎进入图书管理系统！</label>
+<label>欢迎进入图书管理系统！这里是主菜单</label>
 <br/>
 <p>
 <a href="/helloworld/read.action">全部书单</a></p>

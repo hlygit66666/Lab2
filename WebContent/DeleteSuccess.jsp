@@ -8,6 +8,6 @@
 <title>删除成功</title>
 </head>
 <body>
-删除成功!
+删除成功(yes)!
 </body>
 </html>
