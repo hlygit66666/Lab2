@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+	<include file="struts-default.xml" />
+	<package name="helloworld" extends="struts-default"  namespace="/helloworld">
+	
+		<action name="hello" class="hello_w.HelloWorldAction" method="execute">
+			<result name="success">/HelloWorld.jsp</result>
+		</action>
+		<action name="read" class="hello_w.BookAction" method="execute">
+			<result name="success">/all_books.jsp</result>
+			<result name="fail">/no_books.jsp</result>
+			<result name="error">/conn_fail.jsp</result>
+		</action>
+		<action name="information" class="hello_w.InformationAction" method="execute">
+			<result name="success">/B_information.jsp</result>
+		</action>
+		<action name="searchbyauthor" class="hello_w.SearchAction" method="execute">
+			<result name="success">/all_titles.jsp</result>
+			<result name="input">/search.jsp</result>
+			<result name="fail">/no_author.jsp</result>
+		</action>
+		
+		<action name="deletebook" class="hello_w.DeleteAction" method="execute">
+			<result name="success">/delete.jsp</result>
+			<result name="delsuccess">/DeleteSuccess.jsp</result>
+		</action>
+		<action name="addbook" class="hello_w.AddAction" method="execute">
+			<result name="success">/add.jsp</result>
+			
+			<result name="addsuccess">/AddSuccess.jsp</result>
+		</action>
+		<action name="renewB" class="hello_w.NewAction" method="execute">
+			<result name="success">/RenewBook.jsp</result>
+			<result name="input">/RenewBook.jsp</result>
+			<result name="renewsuccess">/RenewSuccess.jsp</result>
+		</action>
+	</package>
+</struts>
